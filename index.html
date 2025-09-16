@@ -56,8 +56,23 @@
       estado = (estado + 1) % 3
       atualizar()
     })
-
+    
+ vermelho.addEventListener("click", () => {
+    estado = 0
     atualizar()
-  </script>
+  })
+
+  amarelo.addEventListener("click", () => {
+    estado = 1
+    atualizar()
+  })
+
+  verde.addEventListener("click", () => {
+    estado = 2
+    atualizar()
+  })
+
+  atualizar()
+</script>
 </body>
 </html>
